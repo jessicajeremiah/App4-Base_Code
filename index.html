@@ -16,10 +16,13 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-
+The purpose of this code is to catergorize one of the common symptoms typically found with those suffering
+from a yeast infection or some other sexual transmitted infection.
 
 Known Issues:
-blah, blah, blah, blah
+A known is of the code is repettitive alert notification of the count results after each page.
+And also that results may imply that if symptoms don't aligned with one diagnosis
+that it may be the other which can be misleading. The results of this code is not medical advice.  
 -->
 
    <head> 
@@ -51,7 +54,7 @@ blah, blah, blah, blah
 		
         } 
 		//these variables display the results
-		function results(){ 
+		function displayresults(){ 
 			var stiPercent = sti_count/4 * 100;
 			var yeastPercent = yeast_count/4 * 100;
 			//outputs results
@@ -180,7 +183,7 @@ blah, blah, blah, blah
 					
 		<div id="content" class="w3-container">
 		<p> Results for the test </p>
-		<a onclick="results();" class="w3-btn w3-grey w3-round"> Show Results </a>
+		<a onclick="displayresults();" class="w3-btn w3-grey w3-round"> Show Results </a>
                 <!-- displays precentages-->
        		<p id="results"></p>
    	</div>
