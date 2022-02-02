@@ -44,7 +44,7 @@ blah, blah, blah, blah
         }
         
 	//this function adds up the counts for the allergy responses
-        function chlamydiaAdd(){
+        function stiAdd(){
             sti_count = sti_count + 1;
         } 
 		//these variables display the results
@@ -54,7 +54,7 @@ blah, blah, blah, blah
 			//outputs results
 			//BR means line break
             //had to add the "%" so that it would pop up as a percentage 
-			var resultText = document.getElementById("displayResults");
+			var resultText = document.getElementById("results");
 			resultText.innerHTML = "Probability it is a yeast infection = " + yeastpercent + "%" + "<br> Probability it is a STI = "+ stipercent + "%" + "<br>" + "<br> Your test is complete!";
 	};
 
@@ -188,7 +188,7 @@ blah, blah, blah, blah
 		<h1>Results</h1>
 	</div>			
 		<div id="content" class="w3-container">
-		<p id="displayResults"></p>	
+		<p id="results"></p>	
    </div>
 		
 <!-- a footer is a small section that displays side notes or extra information -->
