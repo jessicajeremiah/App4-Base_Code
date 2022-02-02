@@ -35,7 +35,7 @@ blah, blah, blah, blah
 	//add variables and name them
 	//have them equal to 0 so that they can start
         var yeast_count = 0;
-        var chlamydia_count = 0;
+        var sti_count = 0;
 
 	//this function adds up the counts for the allergy responses
         function yeastAdd(){
@@ -45,17 +45,17 @@ blah, blah, blah, blah
         
 	//this function adds up the counts for the allergy responses
         function chlamydiaAdd(){
-            chlamydia_count = chlamydia_count + 1;
+            sti_count = sti_count + 1;
         } 
 		//these variables display the results
 		function displayResults(){ 
-			var chlamydiaPercent = chlamydia_count/4 * 100;
+			var stiPercent = sti_count/4 * 100;
 			var yeastPercent = yeast_count/4 * 100;
 			//outputs results
 			//BR means line break
             //had to add the "%" so that it would pop up as a 				percentage 
 			var resultText = document.getElementById("results");
-			resultText.innerHTML = "Probability it is yeast = " + yeastPercent + "%" + "<br> Probability it is chlamydia = "+ chlamydiaPercent + "%" + "<br>" + "<br> Your test is complete!";
+			resultText.innerHTML = "Probability it is a yeast infection = " + yeastpercent + "%" + "<br> Probability it is a STI = "+ stipercent + "%" + "<br>" + "<br> Your test is complete!";
 	};
 
 	
@@ -88,11 +88,12 @@ blah, blah, blah, blah
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>Cold or Allergies?</h1>
+	<h1>Yeast Infection or STI?</h1>
 </div>
 	
 <div id="content" class="w3-container">
-	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
+	<p>Yeast infections are quite common and distiguishing them from other STIs (sexually transmitted diseases). Answer a few short questions to find out!</p>
+	<!-- rewrote my app description -->
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
 	
@@ -106,12 +107,13 @@ blah, blah, blah, blah
 	</div>
 	<!-- DIV creates a division within the pages -->
     	<div id="content" class="w3-container">
-       		<p> Are your eyes watery or itchy? </p> 
+       		<p> Are you experiencing vaginal or penile discharge? </p> 
 		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> yes </a>
 		<a href="#two" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> no </a>
 		<!-- had to create the yes or no button -->
 		<!-- onclick is means when someone clicks it an event/action will occur-->
 		<!--class="w3-btn w3-grey w3-round" is used for the shape and design -->
+		<!-- added new prompt question -->
     	</div>
 	
 </div>
@@ -123,7 +125,7 @@ blah, blah, blah, blah
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Do you have a fever?</p>
+		<p>Is the discharge thick?</p>
 		<a href="#three" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> yes </a>
 		<a href="#three" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> no </a>
 	<!-- had to correct the page IDs so that they synced-->
@@ -135,7 +137,7 @@ blah, blah, blah, blah
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p> Do you have a sore throat?</p>
+		<p> Is the discharge white?</p>
 	<a href="#four" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> yes </a>
 	<a href="#four" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> no </a>
 	<!--  continued to add the buttons -->	
@@ -147,7 +149,7 @@ blah, blah, blah, blah
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p> Are your symptoms seasonal or chronic? </p>
+		<p> Is the discharge cottage-cheese like? </p>
 	<a href="#five" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> yes </a>
 	<a href="#five" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> no </a>
 	</div>
